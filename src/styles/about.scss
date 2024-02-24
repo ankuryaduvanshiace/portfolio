@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+$primary: #00e5ff;
+$secondary: #1200ff;
+
+.about{
+    max-width: 1300px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+
+    > .heading{
+        width: 100%;
+        padding: 0.5rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        > .title-head{
+            font-size: 2rem;
+            font-weight: 500;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -5px;
+                width: 35%;
+                height: 3px;
+                border-radius: 5px;
+                background: linear-gradient(to right, $primary, $secondary);
+            }
+
+            > .bg-span{
+                font-size: 2.2rem;
+                position: relative;
+                z-index: 1;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 5px;
+                    width: 100%;
+                    height: 100%;
+                    padding: 0.2rem 0.3rem;
+                    background: linear-gradient(to right, $primary, $secondary);
+                    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+
+    > .container{
+        width: 100%;
+        padding: 3.6rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        > .left-section{
+           flex-basis: 29%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+
+           > .about-image{
+                width: 360px;
+                border-radius: 5px;
+                box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.8);
+                position: relative;
+                z-index: 1;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: -12px;
+                    left: -15px;
+                    width: 100%;
+                    height: 100%;
+                    border: 1px solid #ee8206;
+                    border-radius: 5px;
+                }
+
+                > img{
+                    display: block;
+                    width: 100%;
+                    object-fit: contain;
+                    border-radius: 5px;
+                }
+           }
+
+        }
+
+        > .right-section{
+            flex-basis: 70%;
+            padding: 2rem;
+
+            > .about-desc p{
+                color: gray;
+                font-size: 1.4rem;
+                font-weight: 500;
+
+                > span{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+/* Responsive Css */
+
+
+
+
+@media screen and (max-width: 1366px) {
+    .about{
+
+        > .container{
+            
+            > .left-section{
+
+                > .about-image{
+                    width: 330px;
+                }
+            }
+
+            > .right-section{
+                padding: 1.6rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about{
+        width: 88%;
+
+        > .container{
+
+            > .left-section{
+                flex-basis: 27%;
+                
+                > .about-image{
+                    width: 280px;
+                    
+                }
+            }
+            
+            > .right-section{
+                flex-basis: 73%;
+                padding: 2.3rem;
+
+                > .about-desc p{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    .about{
+
+        > .container{
+            padding: 3rem 0;
+
+            > .left-section{
+                
+                > .about-image{
+                    width: 220px;
+                    
+                }
+            }
+            
+            > .right-section{
+                padding: 2rem;
+
+                > .about-desc p{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .about{
+        width: 80%;
+        padding: 1.3rem 0;
+
+        > .heading{
+            padding: 0.3rem 0;
+
+            > .title-head{
+                font-size: 1.5rem;
+                
+                > .bg-span{
+                    font-size: 1.7rem;
+                }
+            }
+        }
+
+        > .container{
+            padding: 1.6rem 0;
+
+            > .left-section{
+                display: none;
+            }
+
+            > .right-section{
+                flex-basis: 100%;
+                padding: 1rem;
+                text-align: justify;
+
+                > .about-desc p{
+                    font-size: 1.1rem;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 425px) {
+    .about{
+        padding: 0.8rem 0;
+
+        > .heading{
+            padding: 0.1rem 0;
+
+            > .title-head{
+                font-size: 1.2rem;
+                
+                > .bg-span{
+                    font-size: 1.5rem;
+                    &::before{
+                        top: -2px;
+                    }
+                }
+            }
+        }
+
+        > .container{
+            padding: 1rem 0;
+
+            > .right-section{
+                padding: 0.5rem;
+
+                > .about-desc p{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 375px) {
+    .about{
+        padding: 0.6rem 0;
+
+        > .heading{
+
+            > .title-head{
+                font-size: 1rem;
+                
+                > .bg-span{
+                    font-size: 1.3rem;
+                    &::before{
+                        top: -3px;
+                    }
+                }
+            }
+        }
+
+        > .container{
+            padding: 0.7rem 0;
+
+            > .right-section{
+                padding: 0.4rem;
+
+                > .about-desc p{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}

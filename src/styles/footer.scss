@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+$primary: #ac0271;
+$secondary: #f86528; 
+
+.footer{
+    width: 100%;
+
+    > .footer-section{
+        max-width: 1300px;
+        width: 85%;
+        margin: 0 auto;
+        padding: 2rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid cyan;
+
+        > .footer-title{
+            font-size: 0.9rem;
+            font-weight: 400;
+
+            > .name{
+                font-weight: 700;
+                font-size: 1rem;
+                color: transparent;
+                background: linear-gradient(127deg, $primary 0%, $secondary 100%);
+                -webkit-background-clip: text;
+            }
+        }
+    }
+}
+
+
+
+/* Responsive Css */
+
+
+@media screen and (max-width: 1024px) {
+    .footer{
+
+        > .footer-section{
+            width: 88%;
+            padding: 1.7rem 0;
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .footer{
+
+        > .footer-section{
+            padding: 1.2rem 0;
+
+            > .footer-title{
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .footer{
+
+        > .footer-section{
+            width: 80%;
+            padding: 1rem 0;
+
+            > .footer-title{
+                font-size: 0.8rem;
+
+                > .name{
+                    font-weight: 700;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 425px) {
+    .footer{
+
+        > .footer-section{
+            padding: 0.8rem 0;
+
+            > .footer-title{
+                font-size: 0.7rem;
+
+                > .name{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 375px) {
+    .footer{
+
+        > .footer-section{
+            padding: 0.6rem 0;
+
+            > .footer-title{
+                font-size: 0.6rem;
+
+                > .name{
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}
