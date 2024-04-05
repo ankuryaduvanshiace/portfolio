@@ -16,7 +16,7 @@ const ContactMe = () => {
           <div className="email">
             <span className="icon"><MdEmail /></span>
             <Button className="link">
-                <a href="mailto:ankurdev.react@gmail.com">ankurdev.react@gmail.com</a>
+                <a href="mailto:ankurdev308@gmail.com">ankurdev308@gmail.com</a>
             </Button>
           </div>
           <div className="phone">
