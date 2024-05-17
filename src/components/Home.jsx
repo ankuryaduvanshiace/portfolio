@@ -20,7 +20,7 @@ const Home = () => {
           <div className="buttons">
             <Button className="btn"><a href="#contact">Hire Me</a></Button>
             {/* <Button className="btn">Hire Me</Button> */}
-            <a href="https://drive.google.com/file/d/132nbQS9ZMX8Uev2nS4oj0b5LnXdNviBk/view?usp=sharing" target="_blank" className="download">Download CV</a>
+            <a href="https://drive.google.com/file/d/1LR5WNlOWTyqcsKcCKKNTXiAth1ag4jpQ/view?usp=sharing" target="_blank" className="download">Download CV</a>
           </div>
           <div className="social-media">
             <a href="https://www.linkedin.com/in/ankuryaduvanshi/"  target="_blank" className="linkedin-icon"><FaLinkedin /></a>
