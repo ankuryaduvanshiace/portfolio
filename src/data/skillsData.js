@@ -5,6 +5,9 @@ import reactImg from "../assets/react.png";
 import redux from "../assets/redux.png";
 import sass from "../assets/sass.png";
 import github from "../assets/github2.png";
+import nextjs from "../assets/Next.js.png";
+import mongoDB from "../assets/MongoDB.png";
+import tailwindCss from "../assets/Tailwind_CSS.png";
 
 const skillsData = [
     {
@@ -29,16 +32,31 @@ const skillsData = [
     },
     {
         id: 5,
+        image: nextjs,
+        title: "Next.js"
+    },
+    {
+        id: 6,
+        image: mongoDB,
+        title: "MongoDB"
+    },
+    {
+        id: 7,
         image: redux,
         title: "Redux Toolkit"
     },
     {
-        id: 6,
+        id: 8,
+        image: tailwindCss,
+        title: "Tailwind CSS"
+    },
+    {
+        id: 8,
         image: sass,
         title: "Sass"
     },
     {
-        id: 7,
+        id: 9,
         image: github,
         title: "GitHub"
     }
