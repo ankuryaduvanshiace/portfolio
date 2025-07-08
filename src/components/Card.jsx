@@ -19,9 +19,12 @@ const Card = ({ data }) => {
                 Demo
               </a>
             </Button>
-            <Button className="btn">
-              <a href={data.codeLink} target="_blank">Code</a>
-            </Button>
+            {
+              data.codeLink &&
+              <Button className="btn">
+                <a href={data.codeLink} target="_blank">Code</a>
+              </Button>
+            }
           </div>
         </div>
       </div>

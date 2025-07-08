@@ -1,8 +1,17 @@
 import employee from "../assets/employee.png";
 import expense from "../assets/expense.png";
 import cart from "../assets/cart.png";
+import travel from "../assets/travel.png";
 
 const projects = [
+    {
+        id: 0,
+        title: "Travel Application",
+        description: "A web app to manage list of employees where you can create, update, read and delete (CRUD) employees. There is also a search functionality to search employees by any details.",
+        link: "http://www.exlporevoyagepackages.com/",
+        codeLink: "",
+        image: travel,
+    },
     {
         id: 1,
         title: "Employees Management System",
